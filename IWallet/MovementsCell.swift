@@ -13,13 +13,17 @@ struct MovementsCell: View {
     
     var body: some View {
         
-        HStack {
-            Text("19/11").fontWeight(.semibold).padding()
-            Spacer()
-            Text("$"+String(movement.amount)).fontWeight(.semibold).padding()
-                
-        }
+        var dateString = movement.DateToString()
         
+        HStack {
+            Text(dateString).fontWeight(.semibold).padding()
+            Spacer()
+            if movement.amountIn == true {
+            Text("$"+String(movement.amount)).fontWeight(.semibold).foregroundColor(Color.green).padding()
+            } else {
+                Text("$"+"-"+String(movement.amount)).fontWeight(.semibold).foregroundColor(Color.red).padding()
+            }
+        }
     }
 }
 

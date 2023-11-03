@@ -18,17 +18,17 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 VStack{
-                    Image(systemName: "dollarsign.circle.fill").resizable().padding(10).frame(width: 70, height: 70).border(.black, width: 3)
+                    Image(systemName: "dollarsign.circle.fill").resizable().padding(10).frame(width: 70, height: 70).background(Color.gray).border(.black, width: 2).cornerRadius(12)
                     Text("Transferir")
                 }
                 Spacer()
                 VStack{
-                    Image(systemName: "qrcode").resizable().padding().frame(width: 70, height: 70).border(.black, width: 3)
+                    Image(systemName: "qrcode").resizable().padding().frame(width: 70, height: 70).background(Color.gray).border(.black, width: 2).cornerRadius(12)
                     Text("Pagar QR")
                 }
                 Spacer()
                 VStack{
-                    Image(systemName: "newspaper").resizable().padding().frame(width: 70, height: 70).border(.black, width: 3)
+                    Image(systemName: "newspaper").resizable().padding().frame(width: 70, height: 70).background(Color.gray).border(.black, width: 2).cornerRadius(12)
                     Text("Pagos")
                 }
                 Spacer()
