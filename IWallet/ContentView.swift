@@ -17,14 +17,26 @@ struct ContentView: View {
             
             HStack {
                 Spacer()
-                Image(systemName: "dollarsign.circle.fill").resizable().padding(10).frame(width: 70, height: 70).border(.black, width: 3)
+                VStack{
+                    Image(systemName: "dollarsign.circle.fill").resizable().padding(10).frame(width: 70, height: 70).border(.black, width: 3)
+                    Text("Transferir")
+                }
                 Spacer()
-                Image(systemName: "dollarsign.circle").resizable().padding().frame(width: 70, height: 70).border(.black, width: 3)
+                VStack{
+                    Image(systemName: "qrcode").resizable().padding().frame(width: 70, height: 70).border(.black, width: 3)
+                    Text("Pagar QR")
+                }
                 Spacer()
-                Image(systemName: "creditcard").resizable().padding().frame(width: 70, height: 70).border(.black, width: 3)
+                VStack{
+                    Image(systemName: "newspaper").resizable().padding().frame(width: 70, height: 70).border(.black, width: 3)
+                    Text("Pagos")
+                }
                 Spacer()
             }
             Spacer()
+            
+            MovementsList()
+            
         }
         
         

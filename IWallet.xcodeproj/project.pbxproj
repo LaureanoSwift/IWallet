@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184985A32AF48A0800121B1A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184985A22AF48A0800121B1A /* DataModel.swift */; };
+		184985A52AF494E400121B1A /* MovementsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184985A42AF494E400121B1A /* MovementsList.swift */; };
 		1863C6E42AF3300A0091F66D /* IWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863C6E32AF3300A0091F66D /* IWalletApp.swift */; };
 		1863C6E62AF3300A0091F66D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863C6E52AF3300A0091F66D /* ContentView.swift */; };
 		1863C6E82AF3300C0091F66D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1863C6E72AF3300C0091F66D /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184985A22AF48A0800121B1A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		184985A42AF494E400121B1A /* MovementsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsList.swift; sourceTree = "<group>"; };
 		1863C6E02AF3300A0091F66D /* IWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1863C6E32AF3300A0091F66D /* IWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWalletApp.swift; sourceTree = "<group>"; };
 		1863C6E52AF3300A0091F66D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,9 +38,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184985A12AF489E200121B1A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				184985A22AF48A0800121B1A /* DataModel.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		1863C6D72AF3300A0091F66D = {
 			isa = PBXGroup;
 			children = (
+				184985A12AF489E200121B1A /* Data */,
 				1863C6E22AF3300A0091F66D /* IWallet */,
 				1863C6E12AF3300A0091F66D /* Products */,
 			);
@@ -55,9 +68,10 @@
 			children = (
 				1863C6E32AF3300A0091F66D /* IWalletApp.swift */,
 				1863C6E52AF3300A0091F66D /* ContentView.swift */,
+				1863C6F12AF33D760091F66D /* MovementsCell.swift */,
 				1863C6E72AF3300C0091F66D /* Assets.xcassets */,
 				1863C6E92AF3300C0091F66D /* Preview Content */,
-				1863C6F12AF33D760091F66D /* MovementsCell.swift */,
+				184985A42AF494E400121B1A /* MovementsList.swift */,
 			);
 			path = IWallet;
 			sourceTree = "<group>";
@@ -140,7 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184985A52AF494E400121B1A /* MovementsList.swift in Sources */,
 				1863C6E62AF3300A0091F66D /* ContentView.swift in Sources */,
+				184985A32AF48A0800121B1A /* DataModel.swift in Sources */,
 				1863C6E42AF3300A0091F66D /* IWalletApp.swift in Sources */,
 				1863C6F22AF33D760091F66D /* MovementsCell.swift in Sources */,
 			);
