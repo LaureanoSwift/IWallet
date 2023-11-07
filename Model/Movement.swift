@@ -16,7 +16,7 @@ struct Movement {
     let date: Date
     
     func DateToString() -> String {
-         let date = Date()
+        let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         let dateString = dateFormatter.string(from: date)

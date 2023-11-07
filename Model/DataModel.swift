@@ -3,7 +3,9 @@
 //  IWallet
 //
 //  Created by Camila Storck on 02/11/2023.
-// api key: 88ecea3854a87aad69c987864a789ef0
+// api key: cur_live_0fXgI3SqhcaPIfZM23dxK6uupWmlN7xDMc6FxUp1
+
+
 
 
 import Foundation
