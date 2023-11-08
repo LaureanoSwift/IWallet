@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isExpanded = false
+    
     var body: some View {
         
         VStack (alignment: .center, spacing: 20){
@@ -45,8 +47,8 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     VStack{
-                        Image(systemName: "creditcard.and.123").resizable().frame(width: 70, height: 70).padding(10).background(Color.gray).cornerRadius(12)
-                        Text("PENDIENTE")
+                        Image(systemName: "cart.fill").resizable().frame(width: 70, height: 70).padding(10).background(Color.gray).cornerRadius(12)
+                        Text("Comercios Cercanos")
                     }
                     Spacer()
                     VStack{
@@ -55,13 +57,18 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
-                
+            }
+            
+            List {
+                DisclosureGroup("Movimientos", isExpanded: $isExpanded) {
+                    MovementsList()
+                }
+            }
             }
             Spacer()
-            MovementsList()
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

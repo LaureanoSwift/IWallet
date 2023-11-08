@@ -7,10 +7,11 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class APIClient {
     
-    func fetchData() {
+    func fetchData(completion : @escaping (ConcurrenciesRequest?) -> Void) {
         
         let endPoint = "https://api.currencyapi.com/v3/latest?apikey=cur_live_0fXgI3SqhcaPIfZM23dxK6uupWmlN7xDMc6FxUp1&currencies=EUR%2CUSD%2CRUB&base_currency=ARS"
         
@@ -32,6 +33,7 @@ class APIClient {
                         let decoder = JSONDecoder()
                         let concurrencies = try decoder.decode(ConcurrenciesRequest.self, from: data)
                         
+                        completion(concurrencies)
                     } catch {
                         print("Error al decodificar datos Json: \(error.localizedDescription)")
                     }
@@ -39,7 +41,6 @@ class APIClient {
             }.resume()
             
         }
-        
     }
     
 }

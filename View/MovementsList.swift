@@ -16,7 +16,6 @@ struct MovementsList: View {
     var body: some View {
         List(movements, id: \.id) { movement in
             MovementsCell(movement: movement)
-            
         }
     }
 }

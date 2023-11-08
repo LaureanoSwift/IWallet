@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct concurrency: Codable {
+struct Concurrency: Codable {
         let code:String
         let value:Double
 }
@@ -17,7 +17,7 @@ struct concurrency: Codable {
 struct ConcurrenciesRequest: Codable {
     
     var meta: String
-    var data : [concurrency]
+    var data : [Concurrency]
     
     
 }
