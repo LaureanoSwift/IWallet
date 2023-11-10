@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 import SwiftUI
 
-class APIClient {
+class APIClient: ObservableObject {
+    
+    @Published var apiResponse: String = ""
     
     func fetchData(completion : @escaping (ConcurrenciesRequest?) -> Void) {
         
@@ -39,7 +41,6 @@ class APIClient {
                     }
                 }
             }.resume()
-            
         }
     }
     

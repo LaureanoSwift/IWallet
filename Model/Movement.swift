@@ -15,6 +15,8 @@ struct Movement {
     let amountOut: Bool
     let date: Date
     
+    //añadir variable movement asi anda la lista
+    
     func DateToString() -> String {
         let date = Date()
         let dateFormatter = DateFormatter()

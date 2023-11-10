@@ -9,12 +9,16 @@ import SwiftUI
 
 struct ValorDeCambio: View {
     
-    //var concurrency: () = ConcurrencyManage().fetchDataFromAPI()
+    @StateObject var viewModel = APIClient()
     
     var body: some View {
         
-        Text("")
+        HStack {
+           // representacion de una moneda para hacer una lista
+            //crear un archivo swiftui para la lista
+        }
     }
+
 }
 
 struct ValorDeCambio_Previews: PreviewProvider {

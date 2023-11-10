@@ -17,8 +17,7 @@
 		185E95702AFB1E8000BFCEB4 /* PagarQR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E956F2AFB1E8000BFCEB4 /* PagarQR.swift */; };
 		185E95722AFB1E9100BFCEB4 /* Pagos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E95712AFB1E9100BFCEB4 /* Pagos.swift */; };
 		185E95742AFB1F3400BFCEB4 /* ComerciosCercanos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E95732AFB1F3400BFCEB4 /* ComerciosCercanos.swift */; };
-		185E95762AFB1F4600BFCEB4 /* ValorDeCambio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E95752AFB1F4600BFCEB4 /* ValorDeCambio.swift */; };
-		185E95782AFB212E00BFCEB4 /* ConcurrencyManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E95772AFB212E00BFCEB4 /* ConcurrencyManage.swift */; };
+		185E95762AFB1F4600BFCEB4 /* ValorDeCambioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185E95752AFB1F4600BFCEB4 /* ValorDeCambioCell.swift */; };
 		1863C6E42AF3300A0091F66D /* IWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863C6E32AF3300A0091F66D /* IWalletApp.swift */; };
 		1863C6E62AF3300A0091F66D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1863C6E52AF3300A0091F66D /* ContentView.swift */; };
 		1863C6E82AF3300C0091F66D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1863C6E72AF3300C0091F66D /* Assets.xcassets */; };
@@ -37,8 +36,7 @@
 		185E956F2AFB1E8000BFCEB4 /* PagarQR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagarQR.swift; sourceTree = "<group>"; };
 		185E95712AFB1E9100BFCEB4 /* Pagos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagos.swift; sourceTree = "<group>"; };
 		185E95732AFB1F3400BFCEB4 /* ComerciosCercanos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComerciosCercanos.swift; sourceTree = "<group>"; };
-		185E95752AFB1F4600BFCEB4 /* ValorDeCambio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorDeCambio.swift; sourceTree = "<group>"; };
-		185E95772AFB212E00BFCEB4 /* ConcurrencyManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyManage.swift; sourceTree = "<group>"; };
+		185E95752AFB1F4600BFCEB4 /* ValorDeCambioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValorDeCambioCell.swift; sourceTree = "<group>"; };
 		1863C6E02AF3300A0091F66D /* IWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1863C6E32AF3300A0091F66D /* IWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IWalletApp.swift; sourceTree = "<group>"; };
 		1863C6E52AF3300A0091F66D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +76,7 @@
 				185E956F2AFB1E8000BFCEB4 /* PagarQR.swift */,
 				185E95712AFB1E9100BFCEB4 /* Pagos.swift */,
 				185E95732AFB1F3400BFCEB4 /* ComerciosCercanos.swift */,
-				185E95752AFB1F4600BFCEB4 /* ValorDeCambio.swift */,
+				185E95752AFB1F4600BFCEB4 /* ValorDeCambioCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,7 +86,6 @@
 			children = (
 				18460FA92AF9D8AC00D959A8 /* APIClient.swift */,
 				18460FAB2AF9DB4700D959A8 /* ContentViewModel.swift */,
-				185E95772AFB212E00BFCEB4 /* ConcurrencyManage.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				185E95762AFB1F4600BFCEB4 /* ValorDeCambio.swift in Sources */,
+				185E95762AFB1F4600BFCEB4 /* ValorDeCambioCell.swift in Sources */,
 				184985A52AF494E400121B1A /* MovementsList.swift in Sources */,
 				185E956E2AFB1E6A00BFCEB4 /* Tranferir.swift in Sources */,
 				1863C6E62AF3300A0091F66D /* ContentView.swift in Sources */,
@@ -213,7 +210,6 @@
 				184985A32AF48A0800121B1A /* DataModel.swift in Sources */,
 				1863C6E42AF3300A0091F66D /* IWalletApp.swift in Sources */,
 				1863C6F22AF33D760091F66D /* MovementsCell.swift in Sources */,
-				185E95782AFB212E00BFCEB4 /* ConcurrencyManage.swift in Sources */,
 				185E95742AFB1F3400BFCEB4 /* ComerciosCercanos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

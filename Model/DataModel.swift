@@ -14,7 +14,7 @@ import SwiftUI
 struct DataModel {
     var total: Double
     var date: Date
-    var movements: [Movement]
+    
 }
 
 

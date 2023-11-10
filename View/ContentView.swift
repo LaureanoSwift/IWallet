@@ -59,19 +59,23 @@ struct ContentView: View {
                 }
             }
             
-            List {
-                DisclosureGroup("Movimientos", isExpanded: $isExpanded) {
-                    MovementsList()
-                }
+            MovementsList()
+//            List {
+//                DisclosureGroup("Movimientos", isExpanded: $isExpanded) {
+//                    MovementsList()
+//                }
+//            }
             }
-            }
-            Spacer()
+            
         }
     }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+        }
     }
 }
