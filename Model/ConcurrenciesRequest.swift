@@ -9,7 +9,9 @@
 import Foundation
 
 // MARK: - ConcurrencyRequest
-struct ConcurrenciesRequest: Codable {
+struct ConcurrenciesRequest: Identifiable, Codable {
+    
+    var id: UUID = UUID()
     let meta: Meta
     let data: DataClass
 }
